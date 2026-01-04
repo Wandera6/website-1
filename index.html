@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>SunnySide Bakery - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SunnySide Bakery</div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p id="greeting" class="greeting-text"></p>
+        <p id="today-date" class="date-text"></p>
+        <h1>Freshly Baked, Every Morning</h1>
+        <p>Artisanal breads, pastries, and cakes made with love in your neighborhood.</p>
+        <a href="products.html" class="btn primary-btn">Shop Our Bakes</a>
+      </div>
+      <figure class="hero-image">
+        <img src="https://images.pexels.com/photos/2135/bread-food-healthy-breakfast.jpg" alt="Fresh bread and pastries">
+        <figcaption>Handcrafted loaves and pastries from our oven to your table.</figcaption>
+      </figure>
+    </section>
+
+    <section class="featured-products">
+      <header>
+        <h2>Customer Favorites</h2>
+        <p>Start with our most-loved treats.</p>
+      </header>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg" alt="Sourdough Bread">
+          <div class="product-info">
+            <h3>Sourdough Loaf</h3>
+            <p>Slow-fermented crusty sourdough with a perfect chewy crumb.</p>
+            <p class="price">$5.50</p>
+            <button class="btn add-to-cart" data-product="Sourdough Loaf">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/1026124/pexels-photo-1026124.jpeg" alt="Chocolate Croissant">
+          <div class="product-info">
+            <h3>Chocolate Croissant</h3>
+            <p>Flaky, buttery pastry filled with rich dark chocolate.</p>
+            <p class="price">$3.00</p>
+            <button class="btn add-to-cart" data-product="Chocolate Croissant">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg" alt="Cupcakes">
+          <div class="product-info">
+            <h3>Vanilla Cupcake Box (6)</h3>
+            <p>Six moist vanilla cupcakes topped with silky buttercream.</p>
+            <p class="price">$9.00</p>
+            <button class="btn add-to-cart" data-product="Vanilla Cupcake Box">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> SunnySide Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

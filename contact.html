@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>SunnySide Bakery - Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SunnySide Bakery</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>Questions, custom orders, or feedback? We would love to hear from you.</p>
+    </section>
+
+    <section class="contact-section">
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name<span class="required">*</span></label>
+          <input type="text" id="name" name="name" required>
+          <small class="error-message" id="name-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+          <small class="error-message" id="email-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message<span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="error-message" id="message-error"></small>
+        </div>
+
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p id="form-success" class="success-message"></p>
+      </form>
+
+      <aside class="contact-details">
+        <h2>Bakery Details</h2>
+        <p>Email: hello@sunnysidebakery.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Sunrise Lane, SunnyTown, ST 45678</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> SunnySide Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

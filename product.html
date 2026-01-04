@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>SunnySide Bakery - Products</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">SunnySide Bakery</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌞</button>
+      <div class="cart">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Our Baked Goods</h1>
+      <p>Browse our selection of freshly baked breads, pastries, and cakes.</p>
+    </section>
+
+    <section class="products-section">
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/461060/pexels-photo-461060.jpeg" alt="Baguette">
+          <div class="product-info">
+            <h3>Classic Baguette</h3>
+            <p>Crunchy crust with a soft, airy interior.</p>
+            <p class="price">$4.00</p>
+            <button class="btn add-to-cart" data-product="Classic Baguette">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/2147834/pexels-photo-2147834.jpeg" alt="Cinnamon Roll">
+          <div class="product-info">
+            <h3>Cinnamon Roll</h3>
+            <p>Swirls of cinnamon sugar topped with vanilla icing.</p>
+            <p class="price">$3.50</p>
+            <button class="btn add-to-cart" data-product="Cinnamon Roll">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg" alt="Cheesecake Slice">
+          <div class="product-info">
+            <h3>New York Cheesecake</h3>
+            <p>Creamy classic cheesecake with buttery biscuit base.</p>
+            <p class="price">$4.50</p>
+            <button class="btn add-to-cart" data-product="New York Cheesecake">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/4109992/pexels-photo-4109992.jpeg" alt="Chocolate Cake">
+          <div class="product-info">
+            <h3>Chocolate Fudge Cake</h3>
+            <p>Rich, moist chocolate layers with fudge frosting.</p>
+            <p class="price">$18.00</p>
+            <button class="btn add-to-cart" data-product="Chocolate Fudge Cake">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/1739742/pexels-photo-1739742.jpeg" alt="Croissant">
+          <div class="product-info">
+            <h3>Butter Croissant</h3>
+            <p>Flaky, buttery layers baked to golden perfection.</p>
+            <p class="price">$2.80</p>
+            <button class="btn add-to-cart" data-product="Butter Croissant">Add to Cart</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/4051731/pexels-photo-4051731.jpeg" alt="Macarons">
+          <div class="product-info">
+            <h3>Macaron Box (8)</h3>
+            <p>Assorted flavors: pistachio, raspberry, lemon, chocolate.</p>
+            <p class="price">$14.00</p>
+            <button class="btn add-to-cart" data-product="Macaron Box">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year"></span> SunnySide Bakery. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

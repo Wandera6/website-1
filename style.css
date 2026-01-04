@@ -1,0 +1,35 @@
+/* Root theme variables */
+:root {
+  --color-bg: #fff7ec;
+  --color-bg-alt: #ffffff;
+  --color-text: #3a2c27;
+  --color-primary: #f9a826;
+  --color-primary-dark: #e38b10;
+  --color-accent: #f26c6c;
+  --color-border: #e0d4c4;
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --font-main: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --color-bg: #18171b;
+  --color-bg-alt: #242329;
+  --color-text: #f4f2ff;
+  --color-primary: #f9a826;
+  --color-primary-dark: #e38b10;
+  --color-accent: #f26c6c;
+  --color-border: #3a3844;
+}
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font
